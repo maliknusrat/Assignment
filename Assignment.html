@@ -1,0 +1,112 @@
+<DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Three Boxs</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding:0;
+				box-sizing: border-box;
+				scroll-behavior: smooth;
+				font-family: Arial,san-serif,Helvetica;
+
+			}
+			.container{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,
+			.col-mn-1,.col-mn-2,.col-mn-3,.col-mn-4,.col-mn-5,.col-mn-6,.col-mn-7,.col-mn-8,.col-mn-9,.col-mn-10,.col-mn-11,.col-mn-12,
+			.col-ml-1,.col-ml-2,.col-ml-3,.col-ml-4,.col-ml-5,.col-ml-6,.col-ml-7,.col-ml-8,.col-ml-9,.col-ml-10,.col-ml-11,.col-ml-12,
+			{
+				padding: 5px;
+				float: left;
+			}
+			.box{
+				margin: 10px;
+				border: 2px solid black;
+				background: orange;
+				color: white;
+				text-align: justify;
+			}
+			.text{
+				clear: both;
+				padding: 5px,10px,10px,10px;
+			}
+			.title{
+				border: 2px solid black;
+				padding: 5px;
+				text-align: center;
+				float: right;
+				font-weight: bold;
+
+			}
+			@media(min-width: 992px){
+				.col-lg-4{
+                  width: 33.3333%;
+
+				}
+			}
+			@media(min-width: 768px)and(max-width:991px){
+				.col-ml-6{
+					width: 50%;
+                 
+				}
+				.col-ml-12{
+					width: 100%;
+
+				}
+			}
+			@media(max-width: 767px){
+				.col-mn-12{
+					width: 100%;
+				}
+			}
+			.bg-yellow{
+				background-color: yellow;
+				color: red;
+			}
+			.bg-red{
+				background-color: red;
+				color: yellow;
+			}
+			.bg-green{
+				background-color: green;
+				color: white;
+			}
+			</style>
+	</head>
+	<body>
+	   <h1 align="center">Our Menu</h1>
+	   <div class="container">
+	   <div class="row">
+	   <div class="col-lg-4 col-ml-6 col-mn-12">
+	   <div class="box">
+	   <div class="title bg-yellow">Chicken</div>
+	   <div class="text">
+	   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+	   </div>
+	   </div>
+	   </div>	
+        <div class="col-lg-4 col-ml-6 col-mn-12">
+	   <div class="box">
+	   <div class="title bg-red">Beef</div>
+	   <div class="text">
+	   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+	   </div>
+	   </div>
+	   </div>
+	   <div class="col-lg-4 col-ml-6 col-mn-12">
+	   <div class="box">
+	   <div class="title bg-green">Sushi</div>
+	   <div class="text">
+	   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+	   </div>
+	   </div>
+	   </div>
+	   </div>
+	   </div>	
+    </body>
+	</html>
